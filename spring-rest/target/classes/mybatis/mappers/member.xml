@@ -19,7 +19,7 @@
       <result property="email" column="email" />
       <result property="joinDate" column="joinDate" />
    </resultMap> 
-
+	-->
 
 	<select id="selectAllMemberList" resultMap="memResult">
       <![CDATA[
@@ -51,7 +51,7 @@
 	   id=#{id}
 	]]>      
   </delete>
-  -->
+  
   <select id="loginById"  resultType="memberVO"   parameterType="memberVO" >
 	<![CDATA[
 		select * from t_member	
